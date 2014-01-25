@@ -6,7 +6,7 @@
 \usepackage{latexsym}
 \usepackage{graphicx}
 \usepackage{subfigure}
-\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage[colorlinks,linkcolor=red]{hyperref}
 \textwidth 6.5in
 \textheight 9in
 \topmargin 0pt
@@ -37,16 +37,7 @@ The first 561 columns are measurements from Samsung Smartphone and the subject v
 The raw data and description can be accessed from here:  \\ \url{http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones}.
 
 The data we use is processed to be easily loaded in R(can be downloaded from \url{https://spark-public.s3.amazonaws.com/dataanalysis/samsungData.rda}). I also commit it with some other things on github:\url{https://github.com/lunge111/STA135PROJECT} (The data is under Rworkspace). I will keep works updated on github once we figure out something on this project.
-\section{PROBLEMS WE FOCUS ON}
-\subsection{Correctness of recording activity.}
-We can use classification to determine wether all observations are classified correctly. If the proportion of wrongly discriminated observations is big, it's reasonable to say that it's hard to determine human activities by samrtphone measurements.
-\subsection{Clustering all observations.}
-We will clustering observations into 6 clusters and see wether the measurements do provide information on human activity.
-\subsection{Explore a mechanism to determine human activity by respective smartphone measurements.}
-We probably use some statistical methods like regression and ANOVA to determine relationship(if any) between (part of) smartphone measurement and human activities. This would let smartphone to know what human's doing, thus the phone can adjust some setting depending on human activity. Turn off the rotation function when people's lying, for example. 
-\section{STATISTICAL TECHNIQUES MAY BE USED}
-Classification: to find wether there exists wrongly discriminated observations.\\
-Clustering: to cluster observations.\\
-Dimension reduction: to expedite calculation of R because there are as many as 561 variables of data.\\
-Some other applicable methods we learn in this course.
+\section{QUESTIONS WE FOCUS ON}
+\subsection{}
+
 \end{document} 
